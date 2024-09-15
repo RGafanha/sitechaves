@@ -47,10 +47,9 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -191,6 +190,144 @@ button:hover {
 .pix-logo {
     width: 150px;
     margin-top: 10px;
+}
+
+.proximos-jogos {
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.jogo-mes {
+    margin-bottom: 40px;
+}
+
+.jogo-mes h3 {
+    font-size: 2.5em;
+    color: #b22222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.jogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.jogo-card {
+    background: linear-gradient(146deg, #d03535, #ff0000);
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.jogo-card:hover {
+    transform: scale(1.05);
+}
+
+.jogo-card .data {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.jogo-card .time {
+    margin-top: 5px;
+}
+
+.nav-left, .nav-right {
+    background-color: #ed1515;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o deslocamento */
+}
+
+.nav-left {
+    left: -40px; /* Coloca a seta à esquerda dentro do quadrado */
+}
+
+.nav-right {
+    right: -40px; /* Coloca a seta à direita dentro do quadrado */
+}
+
+.nav-left:hover, .nav-right:hover {
+    background-color: #ff3333;
+}
+
+.jogo-mes {
+    display: none;
+}
+
+.mes-ativo {
+    display: block;
+}
+
+/* Estilos para a última partida */
+.ultima-partida {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo e animação para Vitória */
+.resultado.vitoria {
+    font-size: 3em;
+    color: green;
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo e animação para Derrota */
+.resultado.derrota {
+    font-size: 3em;
+    color: red;
+    animation: fadeOut 3s;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+
+/* Estilo para o placar */
+.placar {
+    font-size: 2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Fogos de artifício (simples) */
+@keyframes fogos {
+    0% { background-position: 0 0; }
+    100% { background-position: -100px -100px; }
+}
+
+.ultima-partida.vitoria::after {
+    content: '';
+    display: block;
+    width: 100%;
+    animation: fogos 1.5s infinite;
+    background-size: cover;
 }
 
 /* Estilos responsivos */
