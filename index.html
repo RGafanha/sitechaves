@@ -2,131 +2,69 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Chaves - Página Principal</title>
-    <link rel="stylesheet" href="/sitechaves/css/styles.css">
+    <title>Chaves FC - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Início do Header -->
     <header>
-        <h1>Bem-vindo ao Chaves</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chaves FC">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="destaque.html">Destaque</a></li>
-                <li><a href="mensalidades.html">Mensalidades</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="destaques.html">Destaques</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Fim do Header -->
 
-    <section class="ultima-partida" id="resultadoPartida">
-        <h2>Última Partida</h2>
-        <h2 class="resultado">Vitória!</h2>
-        <p class="placar">Chaves 3 - 1 Barcelona</p>
+    <!-- Início do Banner Principal -->
+    <section class="banner">
+        <h1>Bem-vindo ao Chaves FC</h1>
+        <p>Unidos pela paixão, movidos pela vitória!</p>
+        <a href="informacoes.html" class="btn">Saiba Mais</a>
     </section>
+    <!-- Fim do Banner Principal -->
 
-    <section class="proximos-jogos">
-        <h2>Próximos Jogos</h2>
-    
-        <!-- Setas de navegação -->
-        <button class="nav-left" id="prevMonth">&larr;</button>
-        <button class="nav-right" id="nextMonth">&rarr;</button>
-    
-        <div class="mes setembro" data-mes="setembro">
-            <h3>Setembro</h3>
-            <div class="jogos">
-                <div class="jogo-card">
-                    <span class="data">07/09</span>
-                    <span class="time">Juventude</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">14/09</span>
-                    <span class="time">Chelsea</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">21/09</span>
-                    <span class="time">Barcelona</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">28/09</span>
-                    <span class="time">Amigos do Trecho</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="mes outubro" data-mes="outubro" style="display:none;">
-            <h3>Outubro</h3>
-            <div class="jogos">
-                <div class="jogo-card">
-                    <span class="data">05/10</span>
-                    <span class="time">Meninos Da Vila</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">12/10</span>
-                    <span class="time">Gaúcho Bolaxa</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">19/10</span>
-                    <span class="time">Camaradas</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">26/10</span>
-                    <span class="time">São Miguel</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="mes novembro" data-mes="novembro" style="display:none;">
-            <h3>Novembro</h3>
-            <div class="jogos">
-                <div class="jogo-card">
-                    <span class="data">02/11</span>
-                    <span class="time">Medellín</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">09/11</span>
-                    <span class="time">(Jogo não definido)</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">16/11</span>
-                    <span class="time">Palmeira (Casa)</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">23/11</span>
-                    <span class="time">Camaradas</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">30/11</span>
-                    <span class="time">Panela</span>
-                </div>
-            </div>
-        </div>
-    
-        <div class="mes dezembro" data-mes="dezembro" style="display:none;">
-            <h3>Dezembro</h3>
-            <div class="jogos">
-                <div class="jogo-card">
-                    <span class="data">07/12</span>
-                    <span class="time">São Jorge</span>
-                </div>
-                <div class="jogo-card">
-                    <span class="data">14/12</span>
-                    <span class="time">Roma</span>
-                </div>
-            </div>
+    <!-- Início das Últimas Notícias -->
+    <section class="noticias">
+        <h2>Últimas Notícias</h2>
+        <div class="noticia-container">
+            <article class="noticia">
+                <img src="images/noticia1.jpg" alt="Notícia 1">
+                <h3>Chaves FC vence clássico regional</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article class="noticia">
+                <img src="images/noticia2.jpg" alt="Notícia 2">
+                <h3>Novo reforço chega ao clube</h3>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article class="noticia">
+                <img src="images/noticia3.jpg" alt="Notícia 3">
+                <h3>Ingressos à venda para o próximo jogo</h3>
+                <p>Curabitur blandit tempus porttitor.</p>
+                <a href="#">Leia mais</a>
+            </article>
         </div>
     </section>
-    
-    
+    <!-- Fim das Últimas Notícias -->
 
-    <section>
-        <h2>Últimos Eventos</h2>
-        <p>Veja fotos e vídeos dos últimos eventos do time.</p>
-    </section>
-
+    <!-- Início do Rodapé -->
     <footer>
-        <p>SC Chaves - Unidos pelo Futebol! © 2024</p>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2023 Chaves FC. Todos os direitos reservados.</p>
     </footer>
-<script src="/sitechaves/javascript/script.js"></script>
+    <!-- Fim do Rodapé -->
 </body>
 </html>
