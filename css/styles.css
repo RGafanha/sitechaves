@@ -1,382 +1,249 @@
-/* Estilos gerais */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Header */
 header {
-    background-color: #b22222; /* Vermelho */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.logo img {
+    height: 60px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: inline-block;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #c00;
 }
 
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #b22222;
-    color: white;
+/* Banner Principal */
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-footer p {
-    margin: 0;
-}
-
-h2 {
-    color: #b22222; /* Vermelho */
-    font-size: 2em;
+.banner h1 {
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 1.1em;
-    line-height: 1.6;
+.banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
-/* Estilo para as seções de destaque */
-.destaque {
-    background-color: #f4f4f4;
-    margin: 20px auto;
+.banner .btn {
+    background-color: #c00;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #900;
+}
+
+/* Seção de Notícias */
+.noticias {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
+}
+
+.noticias h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #c00;
+}
+
+.noticia-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia {
+    background-color: #fff;
     padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.destaque h2 {
-    color: #b22222;
-    font-size: 2em;
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.destaque p {
-    font-size: 1.2em;
-    color: #333;
+.noticia p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
-/* CONTATO */
-
-/* Estilo para a seção de contato */
-.contato, .whatsapp {
-    background-color: #f4f4f4;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.noticia a {
+    text-decoration: none;
+    color: #c00;
+    font-weight: bold;
 }
 
-.contato h2, .whatsapp h2 {
-    color: #b22222;
-    font-size: 2em;
-    margin-bottom: 10px;
+.noticia a:hover {
+    color: #900;
 }
 
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.social-media a:hover img {
+    opacity: 0.7;
+}
+
+/* Páginas Internas */
+main {
+    padding: 50px 5%;
+}
+
+h2 {
+    color: #c00;
+    margin-bottom: 30px;
+}
+
+/* Formulário de Contato */
 form {
     display: flex;
     flex-direction: column;
 }
 
-label {
-    font-size: 1.2em;
-    margin-top: 10px;
-    text-align: left;
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-input, textarea {
+form input,
+form textarea {
+    margin-bottom: 20px;
     padding: 10px;
-    font-size: 1em;
-    margin-top: 5px;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-button {
+form button {
+    width: 150px;
     padding: 10px;
-    background-color: #b22222;
-    color: white;
-    font-size: 1.2em;
+    background-color: #c00;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #8b1a1a;
+form button:hover {
+    background-color: #900;
 }
 
-.whatsapp-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #25d366;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.whatsapp-btn img {
-    width: 25px;
-    margin-right: 10px;
-}
-
-.whatsapp-btn:hover {
-    background-color: #20b858;
-}
-
-/* CONTATO */
-
-
-/* Estilos para a seção de Mensalidades */
-.mensalidades-texto, .pix {
-    background-color: #f4f4f4;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.pix-logo {
-    width: 150px;
-    margin-top: 10px;
-}
-
-.proximos-jogos {
-    position: relative;
-    text-align: center;
-    margin: 30px auto;
-}
-
-.jogo-mes {
-    margin-bottom: 40px;
-}
-
-.jogo-mes h3 {
-    font-size: 2.5em;
-    color: #b22222;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.jogos {
+/* Estilos para o conteúdo principal na página de informações */
+.conteudo-principal {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    margin: 50px 5%;
 }
 
-.jogo-card {
-    background: linear-gradient(146deg, #d03535, #ff0000);
-    width: 200px;
-    height: 100px;
-    border-radius: 15px;
+/* Seção de informações (texto) */
+.informacoes {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+/* Seção de imagem */
+.imagem-lateral {
+    flex: 1;
+    min-width: 300px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    color: white;
-    font-size: 1.5em;
-    transition: transform 0.3s ease;
 }
 
-.jogo-card:hover {
-    transform: scale(1.05);
+/* Estilos para a imagem */
+.imagem-lateral img {
+    max-width: 100%;
+    height: auto;
 }
 
-.jogo-card .data {
-    font-weight: bold;
-    font-size: 1.8em;
-}
-
-.jogo-card .time {
-    margin-top: 5px;
-}
-
-.nav-left, .nav-right {
-    background-color: #ed1515;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.5em;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta o deslocamento */
-}
-
-.nav-left {
-    left: -40px; /* Coloca a seta à esquerda dentro do quadrado */
-}
-
-.nav-right {
-    right: -40px; /* Coloca a seta à direita dentro do quadrado */
-}
-
-.nav-left:hover, .nav-right:hover {
-    background-color: #ff3333;
-}
-
-.jogo-mes {
-    display: none;
-}
-
-.mes-ativo {
-    display: block;
-}
-
-/* Estilos para a última partida */
-.ultima-partida {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo e animação para Vitória */
-.resultado.vitoria {
-    font-size: 3em;
-    color: green;
-    animation: piscar 1s infinite;
-}
-
-@keyframes piscar {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Estilo e animação para Derrota */
-.resultado.derrota {
-    font-size: 3em;
-    color: red;
-    animation: fadeOut 3s;
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0.2; }
-}
-
-/* Estilo para o placar */
-.placar {
-    font-size: 2em;
-    margin-top: 10px;
-    color: #333;
-}
-
-/* Fogos de artifício (simples) */
-@keyframes fogos {
-    0% { background-position: 0 0; }
-    100% { background-position: -100px -100px; }
-}
-
-.ultima-partida.vitoria::after {
-    content: '';
-    display: block;
-    width: 100%;
-    animation: fogos 1.5s infinite;
-    background-size: cover;
-}
-
-/* Estilos responsivos */
+/* Responsividade */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+    .noticia-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    .noticia {
+        width: 80%;
+        margin-bottom: 20px;
     }
 
     nav ul {
-        display: block;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    section {
-        padding: 60px 10px;
-        max-width: 100%;
-    }
-
-    footer p {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 10px 0;
+    }
+    .conteudo-principal {
+        flex-direction: column;
     }
 
-    section {
-        padding: 40px 5px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
+    .imagem-lateral {
+        display: none; /* Oculta a imagem em dispositivos móveis */
     }
 }
