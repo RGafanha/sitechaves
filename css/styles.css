@@ -1,0 +1,249 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #c00;
+}
+
+/* Banner Principal */
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner .btn {
+    background-color: #c00;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #900;
+}
+
+/* Seção de Notícias */
+.noticias {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
+}
+
+.noticias h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #c00;
+}
+
+.noticia-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.noticia a {
+    text-decoration: none;
+    color: #c00;
+    font-weight: bold;
+}
+
+.noticia a:hover {
+    color: #900;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.social-media a:hover img {
+    opacity: 0.7;
+}
+
+/* Páginas Internas */
+main {
+    padding: 50px 5%;
+}
+
+h2 {
+    color: #c00;
+    margin-bottom: 30px;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #900;
+}
+
+/* Estilos para o conteúdo principal na página de informações */
+.conteudo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 5%;
+}
+
+/* Seção de informações (texto) */
+.informacoes {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+/* Seção de imagem */
+.imagem-lateral {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para a imagem */
+.imagem-lateral img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .noticia-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .noticia {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .imagem-lateral {
+        display: none; /* Oculta a imagem em dispositivos móveis */
+    }
+}
